@@ -44,10 +44,10 @@ namespace Time
             Clock newClock = new Clock();
             newClock.SetMin(min);
             newClock.SetHour(hour);
-            decimal x = 0m;
-            x = ((min / 60m) * 30m);
+            decimal hourAdjustedViaMin = 0m;
+            hourAdjustedViaMin = ((min / 60m) * 30m);
 
-            return (hour * 30) + x;
+            return (hour * 30) + hourAdjustedViaMin;
 
         }
     }
